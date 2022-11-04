@@ -1,0 +1,246 @@
+1
+#include<stdio.h>
+float  area (float);
+int main()
+{
+float x,s;
+printf("enter a radius of circle");
+scanf("%f",&x);
+s=area(x);
+printf("area is %f",s);
+return 0;
+}
+float area(float r)
+{
+    float c,pi;
+    pi=3.14;
+   c=pi*r*r;
+   return c;
+}
+output=enter a radius of circle6
+area is 113.040001
+
+2
+#include<stdio.h>
+int Amount(int,int,int);
+int main()
+{
+int A,a,b,c;
+printf("Enter the intial principal balance");
+scanf("%d",&a);
+printf("Enter the Annual interest rate");
+scanf("%d",&b);
+printf("Enter the time in year");
+scanf("%d",&c);
+
+A=Amount(a,b,c);
+printf("Final balance is %d",A);
+return 0;
+}
+int Amount(int P,int r,int t)
+{
+    int c;
+    c=P*r*t/100;
+    return c;
+}
+output=Enter the intial principal balance1000
+Enter the Annual interest rate20
+Enter the time in year4
+Final balance is 800
+
+3
+#include<stdio.h>
+int ev (int);
+int main()
+{
+int a,s;
+    printf("enter the number");
+    scanf("%d",&a);
+    s=ev(a);
+    printf("%d",s);
+}
+int ev(int q)
+{
+
+    if(q%2==0)
+    return 1;
+    else
+        return 0;
+}
+enter the number7
+0
+
+
+
+4
+void na (int);
+int main()
+{
+    int a;
+    printf("enter the number");
+    scanf("%d",&a);
+    na(a);
+}
+void na (int q)
+{
+    int i;
+for(  i=1;i<=q;i++)
+    {
+    printf("%d ",i);
+}
+
+}
+output=enter the number8
+1 2 3 4 5 6 7 8
+
+
+5
+#include<stdio.h>
+void na (int);
+int main()
+{
+    int a;
+    printf("enter the number");
+    scanf("%d",&a);
+    na(a);
+}
+void na (int q)
+{
+    int i;
+for(  i=1;i<=q;i++)
+    {
+    printf("%d ",i*2-1);
+}
+
+}
+output=enter the number6
+1 3 5 7 9 11
+
+
+
+6
+#include<stdio.h>
+void factorial (int);
+int main()
+{
+    int a;
+    printf("enter the number");
+    scanf("%d",&a);
+    na(a);
+}
+void factorial (int q)
+{
+    int f=1;
+    int i;
+for(  i=q;i>=1;i--)
+    {
+    f=f*i;
+    }
+    printf("%d",f);
+}
+output=enter the number6
+720
+
+7
+
+#include<stdio.h>
+int fact (int);
+int main()
+{
+    int n,ncr;
+    int r;
+    printf("enter the n number r");
+    scanf("%d%d",&n,&r);
+    ncr=fact(n)/(fact(r)*fact(n-r));
+    printf("value of %dc%d=%d",n,r,ncr);
+    return 0;
+ }
+ int fact (int q)
+{
+    int f=1;
+    int i;
+for(  i=1;i<=q;i++)
+    {
+    f=f*i;
+    }
+    return f;
+}
+output=enter the n number r5
+3
+value of 5c3=10
+
+
+8
+#include<stdio.h>
+int permutation(int);
+int main()
+{
+int n,r,per;
+printf("enter the value of n and r");
+scanf("%d%d",&n,&r);
+per=permutation(n)/(permutation(n-r));
+printf("the value of %dP%d =%d",n,r,per);
+return 0;
+}
+int permutation(int q)
+{
+int i;
+int f=1;
+for(i=1;i<=q;i++)
+f=f*i;
+return f;
+}
+output=enter the value of n and r4
+3
+the value of 4P3 =24
+
+9
+
+#include<stdio.h>
+int digit(int);
+int main()
+{
+int n;
+printf("enter the number");
+scanf("%d",&n);
+digit(n);
+}
+int digit(int n)
+{
+    int count=0;
+    while(n>0)
+    {
+        n=n/10;
+        count++;
+    }
+    printf("total %d digit",count);
+    }
+
+ 
+10
+#include<stdio.h>
+void fact (int);
+void main()
+{
+    int a;
+    printf("enter the number");
+    scanf("%d",&a);
+    fact(a);
+}
+void fact(int q)
+{
+
+    int i;
+    for(i=2;i<=q;i++)
+    {
+        if(q%i==0)
+    {
+        printf("%d   ",i);
+        q=q/i;
+        i--;
+    }
+}
+}
+output=enter the number75
+3   5   5
+
